@@ -113,6 +113,8 @@ def _force_notfound_prefix(app: Sphinx, _: Config) -> None:
 
 
 def setup(app: Sphinx) -> dict[str, Any]:
+
+    print("hello world")
     """Set up rocm_docs.core as a Sphinx extension."""
     required_extensions = [
         "notfound.extension",
