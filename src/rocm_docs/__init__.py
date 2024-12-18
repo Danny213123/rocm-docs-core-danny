@@ -24,6 +24,7 @@ class ROCmDocs:
         "extensions",
         "html_title",
         "html_theme",
+        "test",
         "html_theme_options",
         "doxygen_root",
         "doxygen_project",
