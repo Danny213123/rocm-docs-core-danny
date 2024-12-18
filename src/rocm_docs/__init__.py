@@ -20,7 +20,7 @@ MaybePath: TypeAlias = str | os.PathLike[str] | None
 # pylint: disable=too-many-instance-attributes
 class ROCmDocs:
     """A class to contain all of the Sphinx variables."""
-
+    test="Hello world"
     SPHINX_VARS: ClassVar = [
         "extensions",
         "html_title",
