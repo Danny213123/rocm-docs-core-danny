@@ -20,7 +20,6 @@ MaybePath: TypeAlias = str | os.PathLike[str] | None
 # pylint: disable=too-many-instance-attributes
 class ROCmDocs:
     """A class to contain all of the Sphinx variables."""
-    test="Hello world"
     SPHINX_VARS: ClassVar = [
         "extensions",
         "html_title",
@@ -87,6 +86,9 @@ class ROCmDocs:
         full_project_name = self._project_name
         self.html_title = full_project_name
         self.html_theme = "rocm_docs_theme"
+
+    def test(self) -> None:
+        print("Hello World - Danny")
 
 
 __all__ = ["setup", "ROCmDocs"]
